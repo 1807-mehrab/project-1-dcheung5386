@@ -1,0 +1,207 @@
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="ajax.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+<link href="https://getbootstrap.com/docs/4.1/examples/carousel/#dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Customers Dashboard</title>
+  </head>
+  <body>
+    
+<header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color:dimgrey">
+        <a class="navbar-brand" href="#">Sweet Suites Customer Dashboard</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="http://localhost:8080/HotelProjFin/loggedin.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://localhost:8080/HotelProjFin/profile.html">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://localhost:8080/HotelProjFin/CustReservations.html">Reservation</a>
+            </li>
+<li class="nav-item">
+              <a class="nav-link" href="http://localhost:8080/HotelProjFin/contactus.html">Contact Us</a>
+            </li>
+          </ul>
+          <form id="logoutbutton" >
+
+			    
+			
+			    <button id="loginbutton" type = "button" value="login" onclick="logout()">logout</button>
+			    
+  
+
+   </form>
+     
+    </header>
+<br>
+<br><br> <br><br> 
+          
+            <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading"><strong>Reserve Your Room Below</strong> </h2>
+                   <form class="lead" id="GetReserve"> <br>
+
+
+			    <label for="uname" style="color: black"><b>Username</b></label>
+			    <input type="text" placeholder="Enter Username" name="uname" required>
+			    <br>
+			    <label for="FNAME" style="color: black"><b>First Name</b></label>
+			    <input type="text" placeholder="Enter First Name" name="FN" required>
+			    <br>
+			    <label for="LNAME" style="color: black"><b>Last Name</b></label>
+			    <input type="text" placeholder="Enter Last Name" name="LN" required>
+			    <br>
+			    	
+			    
+			    <label for="DATEIN" style="color: black"><b>Date In</b></label>
+			    <input type="date" placeholder="Enter Your Check In Date" name="IN" required>
+			    <br>
+			    <label for="DATEOUT" style="color: black"><b>Date Out</b></label>
+			    <input type="date" placeholder="Enter Your Check Out Date" name="OUT" required>
+			    <br>
+			    
+			    <select required>
+					  <option value="Deluxe">Deluxe Suite</option>
+					  <option value="Prince">Prince Suite</option>
+					  <option value="Royal">Royal Suite</option>
+					  
+					</select>
+			    
+			    
+			    <br>
+			<br>
+			    
+</form>
+<button id="loginbutton" type = "button" value="login" onclick="sendNewRes()">Send Request</button>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="KingLiving.jpg" data-holder-rendered="true" style="width: 500px; height: 500px;">
+          </div>
+        </div>  
+    
+
+
+     <hr class="featurette-divider">
+
+
+
+        <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider">
+
+       <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Introducing The Deluxe Suite <span class="text-muted">1st Level In Luxury.</span></h2>
+            <p class="lead"> <br>600 Square Meters
+<br>2 Double Beds
+<br>The Derrick's Signature Bath Products 
+<br>55” HDTV
+<br>Bathroom with Shower 
+<br>Wardrobe
+<br>Hairdryer
+<br>Iron and Ironing board
+<br>Fully Stocked Minibar
+<br>In-room Safe
+<br>Complimentary Breakfast
+</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width:600px; height: 500px;" src="delbedroom.jpg" data-holder-rendered="true">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Introducing Our Prince Suite<span class="text-muted">2nd Level Luxury </span></h2>
+            <p class="lead"><br>700 Square Meters
+<br>2 Double Beds
+<br>The Derrick's Signature Bath Products 
+<br>60” HDTV
+<br>Bathroom with Premium Shower and Bathtub
+<br>Wardrobe
+<br>Hairdryer
+<br>Iron and Ironing board
+<br>Fully Stocked Minibar
+<br>In-room Safe
+<br>Complimentary Breakfast Lunch
+<br>Free Wi-Fi
+<br>Non-smoking rooms subject to availability</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="PrinceRoom.jpg" data-holder-rendered="true" style="width: 600px; height: 475px;">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Royalty Suite <span class="text-muted">Fit For A King</span></h2>
+            <p class="lead">
+<br><Strong>1000 Square Meters</Strong>
+<br>Separate Living Areas
+<br><Strong>2 King Beds</Strong> 
+<br>Free Wi-Fi
+<br>70" HDTV
+<br>Bathroom with Premium Shower and HotTub/Bathtub
+<br>Walk-in Closet
+<br>Hairdryer
+<br>Iron and Ironing Board
+<br>Fully Stocked Minibar
+<br>In-room Safe
+<br>Complimentary Buffet All Day With Room Key
+<br>Sumptuous Linens and Elegant Bath Accessories
+<br>Smoking room only</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="KingLiving.jpg" data-holder-rendered="true" style="width: 500px; height: 500px;">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- /END THE FEATURETTES -->
+
+      </div><!-- /.container -->
+
+
+      <!-- FOOTER -->
+      <footer class="container">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>© 2017-2018 Company, Inc. · <a href="#">Privacy</a> · </p>
+      </footer>
+    </main>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+  
+
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500" preserveAspectRatio="none" style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;"><defs><style type="text/css"></style></defs><text x="0" y="25" style="font-weight:bold;font-size:25pt;font-family:Arial, Helvetica, Open Sans, sans-serif">500x500</text></svg>
+  
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+  </body>
+</html>

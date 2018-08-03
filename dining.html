@@ -1,0 +1,176 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script type="text/javascript" src="ajax.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+<link href="https://getbootstrap.com/docs/4.1/examples/carousel/#dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Derrick's Suites</title>
+  </head>
+  <body>
+    
+<header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color:dimgrey">
+        <a class="navbar-brand" href="#">Sweet Suites</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="http://localhost:8080/HotelProjFin/index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://localhost:8080/HotelProjFin/dining.html">Dining</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://localhost:8080/HotelProjFin/Amenities.html">Amenities</a>
+            </li>
+<li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+          
+          <form id="loggingForms" >
+
+			    <label for="uname" style="color: azure"><b>Username</b></label>
+			    <input type="text" placeholder="Enter Username" name="uname" required>
+			
+			    <label for="psw" style="color: azure"><b>Password</b></label>
+			    <input type="password" placeholder="Enter Password" name="psw" required>
+			
+			    <button id="loginbutton" type = "button" value="login" onclick="login()">Login</button>
+			    
+  
+
+   </form>
+       <button id="myCreate" type = "button" value="createacc" onclick="createcccount()" >Create Account</button> 
+    
+    </header>
+<br>
+<br><br> <br><br> 
+          
+          
+    
+
+
+      <!-- Marketing messaging and featurettes
+      ================================================== -->
+      <!-- Wrap the rest of the page in another container to center all the content. -->
+<h1 style=text-align:center;> Welcome</h1><br>
+
+      <div class="container marketing">
+
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="DELUXE.jpg" width="140" height="140">
+            <h2>DELUXE</h2>
+            <p>A two double bed luxury room with world class amentities and comfort with over 600 square feet of living quarters. *Includes basic shower and free breakfast during your stay  </p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="prince.jpg"alt="Generic placeholder image" width="140" height="140">
+            <h2>PRINCE</h2>
+            <p>A king bed luxury room with world class amentities and comfort with over 700 square feet of living quarters. *Includes world class tub and free breakfast during your stay </p>
+            
+            <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="king.jpg" width="140" height="140">
+            <h2>ROYALTY</h2>
+            <p>A master king bed luxury room with world class amentities and comfort with over 800 square feet of living quarters. *Includes world class hot tub and buffet during your stay</p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+
+
+        <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">World Class Dining <span class="text-muted">Immerse in Luxury...</span></h2>
+            <p class="lead">A world class dining experience,which always entices guests for seconds. The most finest and exotic ingredients, cooked to perfection. World class service to make our guests to treated like royalty. </p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width:600px; height: 500px;" src="cafe.jpg" data-holder-rendered="true">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">World Class Amenities <span class="text-muted">Come, Relax.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            
+<video  width="430" height="350px" autoplay controls>
+  
+  <source src="food.mp4" type="video/mp4">
+
+</video>
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+     
+
+        <hr class="featurette-divider">
+
+        <!-- /END THE FEATURETTES -->
+
+      </div><!-- /.container -->
+
+
+      <!-- FOOTER -->
+      <footer class="container">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>© 2017-2018 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+      </footer>
+    </main>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+  
+
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500" preserveAspectRatio="none" style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;"><defs><style type="text/css"></style></defs><text x="0" y="25" style="font-weight:bold;font-size:25pt;font-family:Arial, Helvetica, Open Sans, sans-serif">500x500</text></svg>
+  
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
